@@ -1,0 +1,12 @@
+//Mixins
+@mixin font($font-family, $font-size) {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+@mixin profile-align($width, $place-items, $z-index) {
+    width: #{$width}cm;
+    place-items: $place-items;
+    @extend .position-relative;
+    z-index: $z-index;
+}

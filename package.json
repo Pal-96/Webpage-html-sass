@@ -1,0 +1,14 @@
+{
+  "name": "assignment-4-palsayan01",
+  "version": "1.0.0",
+  "description": "Assignment 4 of INFO 6150",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

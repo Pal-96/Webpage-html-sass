@@ -1,0 +1,12 @@
+//Loop
+@each $display in $display {
+    .display-#{$display} {
+        display: $display;
+    }
+}
+
+@each $position in $positions {
+    .position-#{$position} {
+        position: $position;
+    }
+}

@@ -1,0 +1,35 @@
+/* This rule is specific to Title */
+.title {
+    text-align: center;
+}
+
+/* This rule is specific to submodule heading of individual pages */
+h5 {
+    color: $buttoncolor;
+    font-family: $titlefont;
+}
+
+/* This rule is to display appropriate image sie of the services */
+.service {
+    height: 2cm;
+    color: white;
+    margin-left: 1cm;
+}
+
+/* This rule is to display image caption of the services */
+.servicecap {
+    font-family: $titlefont;
+    text-align: center;
+}
+
+/* This rule is specific to Religious Tours image */
+#reltour {
+    height: 2.8cm;
+}
+
+.bkgrnd:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6mm;
+    height: 6cm;
+
+}

@@ -1,0 +1,184 @@
+.homepage-container {
+    @extend .display-grid; //SCSS Inheritence
+    grid-template-rows: 2;
+    background-size: cover;
+    background-position: center;
+    height: 450px; color: #fff;
+    background-image: url('/images/sec1_backimg.jpg');
+    padding-top: 30px;
+    padding-left: 150px;
+    padding-bottom: 1cm;
+
+        // Nesting
+        .header {
+            color: white;
+            display: inline;
+            text-decoration: none;
+        }
+
+        .header-section {
+            background:rgba(32, 44, 50, 0.35);
+            background-position: bottom;
+            height: 1.4cm;
+            z-index: 20;
+        }
+        
+        /* This rule is specific to Travel text */
+        #travel {
+            margin-right: 3in;
+        }
+        
+        /* This rule is specific to menu Items - Home, About, Services, Upcoming Packages */
+        .menu {
+            @include font($titlefont, small);
+            border: none;
+            font-weight: $font-weight;
+            margin-right: 5mm;
+        }
+        
+        /* This rule is specific to "Get In Touch" button */
+        #getintouch {
+            background-color: chocolate;
+            border: none;
+            height: 1cm;
+            width: 3cm;
+            border-radius: 6px;
+            color: white;
+            font-size: smaller;
+            margin-left: 1in;
+            font-weight: bolder;
+        }
+        
+        /* This rule is specific to all select elements */
+        select {
+            border: none;
+            background: transparent;
+            color: white;
+            width: 2cm;
+            @include font($titlefont, small);
+            font-weight: $font-weight
+        }
+        
+        /* This rule is specific to Services dropdown in menu */
+        #services {
+            color: black;
+            @include font($titlefont, small);
+            font-weight: $font-weight
+        }
+
+            /* This rule is specific to form element */
+        .form {
+            background:rgba(128, 128, 128, 0.505);
+            width: 17cm;
+            height: 1.5cm;
+            text-align: center;
+            padding-top: 11px;
+        }
+
+        /* This rule is specific to placeholder of "Where To" field in form */
+        input::placeholder {
+            color: white;
+            font-size: small;
+        }
+
+        /* This rule is specific to text message in "Where To" field */
+        #whereto {
+            background: none;
+            border: none;
+            padding-top: 17px;
+            text-align: center;
+            font-weight: $font-weight;
+            color: white;
+            margin-right: 2mm;
+            font-family: $titlefont;
+        }
+
+        /* This rule is specific to Travel Type combobox */
+        #typecombo {
+            width: 3cm;
+            font-size: small;
+        }
+
+        /* This rule is specific to Travel Type combobox values */
+        #traveltype {
+            @include font($titlefont, small);
+            font-weight: $font-weight;
+            color: black;
+        }
+
+        /* This rule is specific to Duration combobox values */
+        #duration {
+            @include font($titlefont, small);
+            font-weight: $font-weight;
+            color: black;
+        }
+
+        /* This rule is specific to form Submit button */
+        #form-submit{
+            background-color: $buttoncolor;
+            border: none;
+            height: 1cm;
+            width: 3cm;
+            border-radius: 6px;
+            color: white;
+            font-weight: $font-weight;
+        }
+
+        .prof-container {
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            width: 1cm;
+        
+            // Nesting
+            /* This rule is specific to profile image in rating section */
+            .rating1 {
+                @include profile-align(0.5, center, 10); //Calling Function 
+            }
+            .rating2 {
+                @include profile-align(0.5, center, 10); //Calling Function
+                right: 5px;
+            }
+            .rating3 {
+                @include profile-align(0.5, center, 10); //Calling Function
+                right: 10px;
+            }
+            .rating4 {
+                @include profile-align(0.5, center, 10); //Calling Function
+                right: 5px;
+            }
+            .rating5 {
+                @include profile-align(0.5, center, 10); //Calling Function
+                right: 35px;
+            }
+        
+            /* This rule is specific to current booking status text */
+            .status {
+                @include font($titlefont, smaller);
+                width: 10cm;
+                align-content: center;
+            }
+        }
+
+}
+
+/* This rule is specific to website slogan */
+#slogan {
+    @include font($titlefont, xxx-large);
+}
+
+/* This rule is specific to footer section of HomePage with flights */
+.flights {
+    height: 17ch; 
+    width: 29.5ch;
+    background-color: #d1cfcf00; 
+
+}
+
+.ref2 {
+    text-decoration: none;
+}
+
+.homepage-header {
+    @extend .position-fixed; //SCSS Inheritence
+
+}
